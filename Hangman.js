@@ -28,7 +28,7 @@ var fetchWord = async () => {
 
     generateunderscore();
 
-    document.getElementById('letter').innerHTML = '<h4>Enter a single Letter</h4>';
+    document.getElementById('letter').innerHTML = '<h4>Enter a Letter</h4>';
 
 }
 
