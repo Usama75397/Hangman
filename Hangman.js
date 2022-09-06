@@ -24,8 +24,6 @@ var fetchWord = async () => {
 
     remainingletter = randomWord.length;
 
-    console.log(randomWord);
-
     generateunderscore();
 
     document.getElementById('letter').innerHTML = '<h4>Enter a Letter</h4>';
@@ -73,8 +71,6 @@ function Search() {
 
 
                 underscore[i] = search;
-                console.log(randomWord[i]);
-                console.log(underscore)
                 remainingletter--;
                 wordPresent = true;
                 document.getElementById('letter').style.display = 'none';
