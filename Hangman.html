@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="hangman.css">
+</head>
+
+<body onload="loading()">
+
+  <div class="img"><img src="1.jpg" alt="hangman" id="hangman"></div>
+  <div class="container">
+    <div id="hide">
+        <h3 id="tag">JavaScript Hangman Game</h3>
+        <form action="">
+          <input type="text" id="search" placeholder="Enter the letter..." onfocus="this.value=''" />
+        </form>
+        <div id="btn1"><input type="button" value="Guess" onclick="Search()" /></div>
+        <br>
+        
+        <div id="showletter"><span id="load"></span></div><br>
+        <h4 id="remain">Remaining Lives : <span id="lives"></span> </h3><br>
+      </div>
+      <div id="hide1">
+      <div id="win"></div>
+      <div id="lose"></div>
+      <div id="over"></div>
+      <div id="hide2"><span id="letter"></span><span  id="singleLetter"><h4>Enter the single Letter</h4></span><span id="wrong"><h4>Wrong input</h4></span></div>
+      <div id="btn2"><input type="button" id="play" value="Play Again" onclick="play()" /></div>
+      </div>
+    </div>
+    <!--Script-->
+    <script src="hangman.js"></script>
+</body>
+
+</html>

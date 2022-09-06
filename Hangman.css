@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #f43131;
+  }
+  
+  /* white container */
+  .container {
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    background-color: #d2cbcb;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 65%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+  }
+  
+  .img{
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 8%;
+  }
+  
+  #search{
+    border: 2px solid #232425;
+  }
+  
+  #btn1{
+    padding-top: 10px;
+  }
+  #btn2{
+    padding-top: 10px;
+  }
+  
