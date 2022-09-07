@@ -1,5 +1,3 @@
-
-
 /* .then(response => {
     console.log("Response", response)
   })
@@ -20,7 +18,6 @@ var fetchWord = async () => {
 
     randomWordNum = Math.floor(Math.random() * word.length);
     randomWord = word[randomWordNum];
-
 
     remainingletter = randomWord.length;
 
@@ -77,9 +74,6 @@ function Search() {
                 document.getElementById('singleLetter').style.display = 'none';
                 document.getElementById('wrong').style.display = 'none';
             }
-
-
-
         }
 
         if (!wordPresent) {
@@ -89,11 +83,9 @@ function Search() {
             document.getElementById('wrong').style.display = '';
             document.getElementById('letter').style.display = 'none';
             document.getElementById('singleLetter').style.display = 'none';
-
         }
         document.getElementById("showletter").innerHTML = underscore.join(" ");
     }
-
 
     if (remainingletter === 0) {
         document.getElementById('win').innerHTML = '<h4>You Win!!</h4>';
@@ -120,7 +112,6 @@ function Search() {
         document.getElementById('hangman').src = '6.jpg';
     }
     if (lives === 0) {
-
         document.getElementById('hangman').src = '7.jpg';
         document.getElementById('lose').innerHTML = '<h4>You Lose!!</h4>';
         document.getElementById('over').innerHTML = '<h4>Game Over!!</h4>';
@@ -129,7 +120,6 @@ function Search() {
         document.getElementById('wrong').style.display = 'none';
         document.getElementById('letter').style.display = 'none';
         document.getElementById('singleLetter').style.display = 'none';
-
     }
 
 }
